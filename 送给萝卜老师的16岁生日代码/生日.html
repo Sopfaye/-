@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>生日快乐🎂</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #ff69b4;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #ffa07a;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #444;
+    }
+    img {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!--音乐-->
+  <audio autoplay loop hidden>
+    <source src="happybirthday.mp3" type="audio/mpeg">
+  </audio>
+
+    <!-- 插入照片 -->
+    <img src="IMG_5692.PNG" alt="这是我唯一的我们两的游戏截图了🫠 ">
+    <br> 这是我唯一的关于我们两的游戏截图了🫠
+
+  <h1>🎉 祝你16岁生日快乐呀老师～🎂</h1>
+  <button onclick="showMessage()">点我有惊喜 ✨</button>
+  <div class="message" id="msg">
+    希望老师学习进步！ 最后两年的高中开开心心的！考上好大学呀～<br>
+    也祝老师蛋糕吃不完，喜欢也收不完～<br>
+    <strong>💌天天开心呀！</strong>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('msg').style.display = 'block';
+    }
+    const audio = new Audio('happybirthday.mp3');
+
+function showMessage() {
+  document.getElementById('msg').style.display = 'block';
+  audio.play(); // 用户点击按钮后播放音乐
+}
+  </script>
+</body>
+</html>
